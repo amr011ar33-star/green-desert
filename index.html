@@ -3,38 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Green Desert | تنسيق حدائق بالرياض</title>
+
+<title>الصحراء الخضراء | تنسيق حدائق بالرياض</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
-body {margin:0; font-family:Arial; background:#f5f5f5;}
-header {background:#0f3d2e; color:white; padding:40px; text-align:center;}
-h1 {margin:0; font-size:32px;}
-section {padding:40px; text-align:center;}
-.btn {
-background:#c9a14a;
-color:white;
-padding:15px 25px;
-text-decoration:none;
-border-radius:10px;
-font-size:18px;
+body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    background: #f5f5f5;
 }
+
+/* الهيدر */
+header {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* الأقسام */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
 .services {
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-padding:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
+
 .card {
-background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-footer {
-background:#0f3d2e;
-color:white;
-text-align:center;
-padding:15px;
+
+.card h3 {
+    color: #2e7d32;
+}
+
+/* زر واتساب */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
 }
 </style>
 </head>
@@ -42,33 +78,35 @@ padding:15px;
 <body>
 
 <header>
-<h1>🌿 Green Desert</h1>
-<p>تنسيق حدائق بالرياض ونواحيها</p>
+<h1>الصحراء الخضراء</h1>
+<p>تنسيق حدائق - شلالات - عشب صناعي بالرياض</p>
 </header>
 
 <section>
-<h2>حوّل حديقتك إلى مكان فاخر</h2>
-<a class="btn" href="https://wa.me/966565543152">تواصل واتساب</a>
-</section>
-
-<section>
 <h2>خدماتنا</h2>
+
 <div class="services">
-<div class="card">🌿 تنسيق حدائق</div>
-<div class="card">💧 شلالات ونوافير</div>
-<div class="card">🌱 عشب صناعي</div>
-<div class="card">💡 إضاءة خارجية</div>
+    <div class="card">
+        <h3>تصميم حدائق</h3>
+        <p>تصاميم عصرية تناسب جميع المساحات</p>
+    </div>
+
+    <div class="card">
+        <h3>شلالات ونوافير</h3>
+        <p>تنفيذ احترافي بأفضل الخامات</p>
+    </div>
+
+    <div class="card">
+        <h3>عشب صناعي</h3>
+        <p>تركيب عالي الجودة وضمان طويل</p>
+    </div>
 </div>
 </section>
 
-<section>
-<h2>لماذا نحن؟</h2>
-<p>خبرة عالية - جودة تنفيذ - تصميم عصري</p>
-</section>
-
-<footer>
-© Green Desert
-</footer>
+<!-- زر واتساب -->
+<a class="whatsapp" href="https://wa.me/966XXXXXXXXX" target="_blank">
+تواصل واتساب
+</a>
 
 </body>
 </html>
