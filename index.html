@@ -1,115 +1,92 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>تنسيق حدائق الرياض</title>
+<title>حدائق الرياض</title>
 
 <style>
-body {
-    margin:0;
-    font-family: Arial;
-}
-
+body {margin:0;font-family:Tahoma;background:#f6f6f6}
 header {
-    background: url('https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62') center/cover;
-    height: 90vh;
-    color: white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
+background:url('https://images.unsplash.com/photo-1599685315640-0a7b3e4c2f4d') center/cover;
+color:#fff;text-align:center;padding:120px 20px
 }
-
-header h1 {
-    font-size:40px;
-}
-
+header h1 {font-size:40px;margin-bottom:10px}
+header p {font-size:20px}
 .btn {
-    background:#2ecc71;
-    padding:15px 25px;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
+background:#1f7a3f;color:#fff;padding:12px 25px;
+text-decoration:none;border-radius:6px;display:inline-block;margin-top:15px
 }
 
-section {
-    padding:50px;
-    text-align:center;
-}
-
+section {padding:50px 20px;text-align:center}
 .services {
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px
 }
-
 .card {
-    padding:20px;
-    border:1px solid #ddd;
-    border-radius:10px;
+background:#fff;padding:25px;border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1)
+}
+.gallery img {
+width:100%;border-radius:10px;margin-bottom:10px
 }
 
-.gallery img {
-    width:100%;
-    border-radius:10px;
+footer {
+background:#222;color:#fff;padding:20px;text-align:center
 }
 
 .whatsapp {
-    position:fixed;
-    bottom:20px;
-    left:20px;
-    background:#25D366;
-    color:white;
-    padding:15px;
-    border-radius:50%;
-    text-decoration:none;
+position:fixed;
+bottom:20px;left:20px;
+background:#25D366;color:#fff;
+padding:15px;border-radius:50%;
+text-decoration:none;font-size:20px
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-    <div>
-        <h1>تنسيق حدائق بالرياض</h1>
-        <p>حوّل حديقتك إلى جنة خضراء</p>
-        <a class="btn" href="https://wa.me/966XXXXXXXXX">اطلب الآن</a>
-    </div>
+<h1>تنسيق حدائق بالرياض باحترافية عالية</h1>
+<p>تصميم - تنفيذ - صيانة</p>
+<a class="btn" href="https://wa.me/966565543152">تواصل الآن</a>
 </header>
 
 <section>
-    <h2>خدماتنا</h2>
-    <div class="services">
-        <div class="card">تنسيق حدائق</div>
-        <div class="card">عشب صناعي</div>
-        <div class="card">شلالات ونوافير</div>
-        <div class="card">مظلات وسواتر</div>
-    </div>
+<h2>خدماتنا</h2>
+
+<div class="services">
+<div class="card"><h3>تنسيق حدائق</h3><p>تصميم وتنفيذ حدائق فلل ومنازل</p></div>
+<div class="card"><h3>ثيل طبيعي</h3><p>توريد وتركيب أفضل أنواع الثيل</p></div>
+<div class="card"><h3>عشب صناعي</h3><p>تركيب عشب صناعي عالي الجودة</p></div>
+<div class="card"><h3>شلالات</h3><p>تصميم شلالات ونوافير فخمة</p></div>
+<div class="card"><h3>مظلات</h3><p>مظلات وسواتر حديثة</p></div>
+<div class="card"><h3>شبكات ري</h3><p>أنظمة ري ذكية موفرة للمياه</p></div>
+</div>
+
 </section>
 
 <section>
-    <h2>معرض أعمالنا</h2>
-    <div class="services gallery">
-        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
-        <img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62">
-        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994">
-    </div>
+<h2>أعمالنا</h2>
+<div class="gallery">
+<img src="https://images.homify.com/v1548043603/p/photo/image/2877577/IMG-20181106-WA0019.jpg">
+<img src="https://images.homify.com/v1548043625/p/photo/image/2877581/IMG-20181020-WA0031.jpg">
+</div>
 </section>
 
 <section>
-    <h2>لماذا نحن؟</h2>
-    <p>خبرة + جودة + سرعة تنفيذ</p>
+<h2>تواصل معنا</h2>
+<p>📞 0565543152</p>
+<p>📍 الرياض</p>
 </section>
 
-<section>
-    <h2>تواصل معنا</h2>
-    <p>055XXXXXXX</p>
-</section>
+<footer>
+<p>© جميع الحقوق محفوظة</p>
+</footer>
 
-<a class="whatsapp" href="https://wa.me/966XXXXXXXXX">واتساب</a>
+<a class="whatsapp" href="https://wa.me/966565543152">💬</a>
 
 </body>
 </html>
