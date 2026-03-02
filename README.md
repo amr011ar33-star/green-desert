@@ -1,58 +1,118 @@
-<section style="padding:60px 20px;text-align:center;background:#fff">
-<h2 style="margin-bottom:30px">معرض أعمالنا</h2>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="gallery">
+<title>تنسيق حدائق الرياض | Green Desert</title>
 
-<img src="https://images.unsplash.com/photo-1598902108854-10e335adac99" onclick="openModal(this.src)">
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" onclick="openModal(this.src)">
-<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c" onclick="openModal(this.src)">
-<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" onclick="openModal(this.src)">
-<img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368" onclick="openModal(this.src)">
-<img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4" onclick="openModal(this.src)">
+<meta name="description" content="تنسيق حدائق بالرياض - عشب صناعي وطبيعي - شلالات ونوافير - تصميم حدائق بأفضل الأسعار">
+<meta name="keywords" content="تنسيق حدائق الرياض, عشب صناعي, تصميم حدائق, شلالات, نوافير">
+
+<style>
+body {
+  margin:0;
+  font-family:Tahoma;
+  background:#f5f5f5;
+}
+
+header {
+  background:#0a7d3b;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+}
+
+section {
+  padding:20px;
+}
+
+.services, .gallery {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  gap:15px;
+}
+
+.box {
+  background:#fff;
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.gallery img {
+  width:100%;
+  border-radius:10px;
+}
+
+.whatsapp {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25d366;
+  color:#fff;
+  padding:15px;
+  border-radius:50%;
+  font-size:20px;
+  text-decoration:none;
+}
+
+.call {
+  position:fixed;
+  bottom:80px;
+  right:20px;
+  background:#0a7d3b;
+  color:#fff;
+  padding:15px;
+  border-radius:50%;
+  font-size:20px;
+  text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Green Desert</h1>
+<p>تنسيق حدائق بالرياض - جودة عالية وأسعار منافسة</p>
+</header>
+
+<section>
+<h2>خدماتنا</h2>
+<div class="services">
+
+<div class="box">تنسيق حدائق</div>
+<div class="box">عشب صناعي</div>
+<div class="box">شلالات</div>
+<div class="box">نوافير</div>
+<div class="box">مظلات</div>
+<div class="box">زراعة نخيل</div>
 
 </div>
 </section>
 
-<!-- نافذة تكبير الصور -->
-<div id="modal" onclick="closeModal()" style="
-display:none;
-position:fixed;
-top:0;left:0;
-width:100%;height:100%;
-background:rgba(0,0,0,0.9);
-justify-content:center;
-align-items:center;
-z-index:999;
-">
-<img id="modalImg" style="max-width:90%;max-height:90%;border-radius:10px">
+<section>
+<h2>معرض أعمالنا</h2>
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1598902108854-10e335adac99">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+<img src="https://images.unsplash.com/photo-1558904541-efa843a96f01">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+
 </div>
+</section>
 
-<style>
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-}
+<section>
+<h2>آراء العملاء</h2>
+<div class="box">شغل ممتاز وسريع 👍</div>
+<div class="box">أفضل شركة تعاملت معها</div>
+</section>
 
-.gallery img{
-width:100%;
-border-radius:12px;
-cursor:pointer;
-transition:.4s;
-}
+<a class="whatsapp" href="https://wa.me/966565543152">💬</a>
+<a class="call" href="tel:0565543152">📞</a>
 
-.gallery img:hover{
-transform:scale(1.05);
-}
-</style>
-
-<script>
-function openModal(src){
-document.getElementById("modal").style.display="flex";
-document.getElementById("modalImg").src=src;
-}
-
-function closeModal(){
-document.getElementById("modal").style.display="none";
-}
-</script>
+</body>
+</html>
