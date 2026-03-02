@@ -3,85 +3,101 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Green Desert | تنسيق حدائق بالرياض</title>
-<meta name="description" content="شركة Green Desert لتنسيق الحدائق بالرياض، عشب صناعي، شلالات، مظلات، تصميم حدائق منزلية بأفضل الأسعار">
 
 <style>
-body {
-  font-family: Arial;
-  margin: 0;
-  background: #f5f5f5;
-  text-align: center;
-}
+body {margin:0;font-family:Arial;background:#f5f5f5}
 
-/* الهيدر */
+/* هيدر */
 header {
-  background: green;
-  color: white;
-  padding: 25px;
-  font-size: 24px;
+  background:#0a7f3f;
+  color:white;
+  text-align:center;
+  padding:25px;
+  font-size:24px;
 }
 
-/* الأقسام */
-section {
-  padding: 40px 20px;
+/* قسم رئيسي */
+.hero {
+  text-align:center;
+  padding:30px;
+}
+.hero h1 {color:#0a7f3f}
+.hero p {font-size:18px}
+
+/* زر */
+.btn {
+  display:inline-block;
+  background:#25d366;
+  color:white;
+  padding:12px 20px;
+  border-radius:8px;
+  text-decoration:none;
+  margin-top:10px;
 }
 
-/* الخدمات */
-.services div {
-  background: white;
-  margin: 10px;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-/* المعرض */
+/* معرض */
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  gap: 10px;
-  padding: 10px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+  padding:20px;
 }
-
 .gallery img {
-  width: 100%;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-/* عرض الصورة */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  top:0; left:0;
   width:100%;
-  height:100%;
-  background: rgba(0,0,0,0.9);
+  height:200px;
+  object-fit:cover;
+  border-radius:10px;
+  cursor:pointer;
 }
 
-.modal img {
-  width: 80%;
-  margin-top: 10%;
+/* قبل وبعد */
+.before-after {
+  padding:20px;
+}
+.before-after img {
+  width:100%;
+  border-radius:10px;
+}
+
+/* تقييمات */
+.reviews {
+  background:#fff;
+  padding:20px;
+}
+.review {
+  background:#eee;
+  padding:10px;
+  margin:10px 0;
+  border-radius:8px;
+}
+
+/* تكبير */
+.lightbox {
+  position:fixed;
+  top:0;left:0;
+  width:100%;height:100%;
+  background:rgba(0,0,0,0.9);
+  display:none;
+  justify-content:center;
+  align-items:center;
+}
+.lightbox img {
+  max-width:90%;
+  max-height:90%;
 }
 
 /* واتساب */
 .whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: white;
-  padding: 15px;
-  border-radius: 50%;
-  font-size: 20px;
-  text-decoration: none;
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  background:#25d366;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  font-size:22px;
+  text-decoration:none;
 }
 </style>
 </head>
@@ -89,46 +105,50 @@ section {
 <body>
 
 <header>
-🌿 Green Desert لتنسيق الحدائق
+🌿 Green Desert لتنسيق الحدائق بالرياض
 </header>
 
-<section>
-<h2>خدماتنا</h2>
-<div class="services">
-  <div>🌱 عشب صناعي</div>
-  <div>💧 شلالات ونوافير</div>
-  <div>🌴 تصميم حدائق</div>
-</div>
+<section class="hero">
+<h1>حوّل حديقتك إلى جنة خضراء 🌴</h1>
+<p>تنسيق حدائق - شبكات ري - عشب صناعي - شلالات</p>
+<a class="btn" href="https://wa.me/966565543152">اطلب الخدمة الآن</a>
 </section>
 
-<section>
-<h2>معرض أعمالنا</h2>
-<div class="gallery">
-  <img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62" onclick="openImg(this)">
-  <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" onclick="openImg(this)">
-  <img src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95" onclick="openImg(this)">
-</div>
+<!-- قبل وبعد -->
+<section class="before-after">
+<h2>قبل / بعد 🔥</h2>
+<img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62">
 </section>
 
-<div class="modal" id="modal" onclick="closeImg()">
-  <img id="modalImg">
-</div>
-
-<section>
-<h2>تواصل معنا</h2>
-<p>📞 0565543152</p>
+<!-- معرض -->
+<section class="gallery">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" onclick="openImage(this)">
+<img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9" onclick="openImage(this)">
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" onclick="openImage(this)">
+<img src="https://images.unsplash.com/photo-1599687266725-1f9c1b0c95a0" onclick="openImage(this)">
 </section>
 
-<a class="whatsapp" href="https://wa.me/966565543152">💬</a>
+<!-- تقييمات -->
+<section class="reviews">
+<h2>آراء العملاء ⭐</h2>
+<div class="review">خدمة ممتازة وسرعة في التنفيذ 👍</div>
+<div class="review">أفضل شركة تنسيق حدائق بالرياض 👌</div>
+<div class="review">شغل احترافي وأنصح فيهم 🔥</div>
+</section>
+
+<div class="lightbox" id="lightbox" onclick="closeImage()">
+<img id="lightbox-img">
+</div>
+
+<a class="whatsapp" href="https://wa.me/966565543152">📞</a>
 
 <script>
-function openImg(img){
-  document.getElementById("modal").style.display="block";
-  document.getElementById("modalImg").src=img.src;
+function openImage(img){
+document.getElementById("lightbox").style.display="flex";
+document.getElementById("lightbox-img").src=img.src;
 }
-
-function closeImg(){
-  document.getElementById("modal").style.display="none";
+function closeImage(){
+document.getElementById("lightbox").style.display="none";
 }
 </script>
 
